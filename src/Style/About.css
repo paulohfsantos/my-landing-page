@@ -1,0 +1,48 @@
+.about {
+    padding-top: .5rem;
+    height: 90vh;
+    background-color: #1c1c1c;
+    color: #ddd;
+}
+.about h1 {
+    text-align: center;
+    padding: 4rem 0;
+}
+.about h1::after {
+    content: '';
+    background: #15cdfc;
+    width: 2em;
+    height: 3px;
+    position: absolute;
+    left: 50%;
+    transform: translateY(45px) translate(-50%);
+    transition: width 0.3s;
+}
+figure {
+    text-align: center;
+    padding: 1.5rem 0 1.5rem 0;
+}
+.flex {
+    display: flex;
+}
+.align-items-center {
+    align-items: center;
+}
+p {
+    text-align: right;
+}
+p .link {
+    color: #ddd;
+}
+p .link:hover {
+    color: rgb(187, 187, 187)
+}
+
+@media screen and (max-width: 768px) {
+    .about {
+        padding-top: 1rem;
+    }
+    p {
+        text-align: center;
+    }
+}

@@ -1,0 +1,67 @@
+.slider {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.slide {
+    min-width: 100%;
+    height: 50vh;
+    transition: 0.5s;
+}
+.slider span {
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: center;
+    bottom: 50%;
+    color: #fff;
+    font-size: 35px;
+    font-weight: 600;
+    text-shadow: 1px 4px 3px #000000e6;
+    z-index: 90;
+}
+#goLeft {
+    position: absolute;
+    background: none;
+    color: #fff;
+    outline: 0;
+    border: none;
+    cursor: pointer;
+    width: 5%;
+    height: 50vh;
+    left: 0;
+    z-index: 100;
+}
+#goRight {
+    position: absolute;
+    background: none;
+    color: #fff;
+    outline: 0;
+    border: none;
+    cursor: pointer;
+    width: 5%;
+    height: 50vh;
+    right: 0;
+    z-index: 100;
+}
+
+@media screen and (max-width: 768px) {
+    .slider {
+        height: 30vh;
+    }
+    .slider span {
+        top: 33%;
+        z-index: 90;
+    }
+    #goLeft {
+        height: 25vh;
+        z-index: 100;
+    }
+    #goRight {
+        height: 25vh;
+        z-index: 100;
+    }
+}

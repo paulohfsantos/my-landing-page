@@ -1,0 +1,55 @@
+.home {
+    background-color: #1c1c1c;
+    color: #ddd;
+}
+.home h2 {
+    margin: 4rem 0 1rem 0;
+    text-align: center;
+}
+.home h2::after {
+    content: '';
+    background: #15cdfc;
+    width: 2em;
+    height: 3px;
+    position: absolute;
+    left: 50%;
+    transform: translateY(40px) translate(-50%);
+    transition: width 0.3s;
+}
+.home .padding-2 {
+    padding-bottom: 2rem;
+}
+.justify-center {
+    justify-content: center;
+}
+.home h3 {
+    margin: 15px 0 0 0;
+    font-size: 15px;
+    font-weight: 400;
+    text-align: center;
+}
+.home .centered {
+    margin: 0 auto;
+}
+.home .link-proj {
+    color: #ddd;
+    font-size: 15px;
+    padding: .5rem 1.5rem;
+    border-radius: 3px;
+    background-color: #2789a2;
+    text-decoration: none;
+    text-align: center;
+    transition: 0.3s ease-in;
+}
+    .home .link-proj:hover{
+        background-color: #34b0cf;
+    }
+
+@media screen and (max-width: 768px) {
+    .home h2 {
+        margin-top: .5rem;
+    }
+    .card-list {
+        display: block;
+    }
+}
