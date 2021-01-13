@@ -14,7 +14,7 @@ import '../Style/Cards.css'
                             {props.title}
                         </div>
                         <div className="card-subtitle">
-                            {props.subtitle}
+                            <p>{props.subtitle}</p>
                         </div>
                     </div>
                 </div>
