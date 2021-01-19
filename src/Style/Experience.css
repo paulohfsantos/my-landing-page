@@ -1,6 +1,5 @@
 .exp {
     padding-top: .5rem;
-    height: 90vh;
     background-color: #1c1c1c;
     color: #ddd;
 }
@@ -44,6 +43,7 @@
 }
 .exp-card-desc ul li {
     margin: 5px 0;
+    list-style: disc;
 }
 
 @media screen and (max-width: 768px) {
@@ -58,5 +58,9 @@
     }
     .exp-card-name h3 {
         text-align: left;
+    }
+    .exp-card-desc ul li {
+        margin: unset;
+        padding: 6px 0;
     }
 }

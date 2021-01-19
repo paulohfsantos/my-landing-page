@@ -67,4 +67,7 @@
     .card-list {
         display: block;
     }
+    .exp-box-home {
+        padding-left: 0;
+    }
 }
