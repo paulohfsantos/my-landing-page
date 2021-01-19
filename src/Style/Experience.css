@@ -4,30 +4,11 @@
     background-color: #1c1c1c;
     color: #ddd;
 }
-.container {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-.row {
-    display: flex;
-    flex-wrap: wrap;
-}
-.exp-col-12 {
-    flex: 0 0 100%;
-    max-width: 100%;
-}
-.exp-col-6 {
-    flex: 0 0 50%;
-    max-width: 50%;
-    padding: 0 1rem;
-}
-.exp-col-12 h1 {
+.exp h1 {
     text-align: center;
     padding: 4rem 0;
 }
-.exp-col-12 h1::after {
+.exp h1::after {
     content: '';
     background: #15cdfc;
     width: 2em;
@@ -36,4 +17,46 @@
     left: 50%;
     transform: translateY(45px) translate(-50%);
     transition: width 0.3s;
+}
+.exp ul {
+    list-style: inside;
+}
+.exp-card {
+    background-color: #101010;
+    padding: 1rem 1.5rem;
+    border-radius: 5px;
+    margin: 25px 0;
+}
+.exp-card-name {
+    border-bottom: 1px solid #dddddd26;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+.exp-card-name h2 {
+    padding-bottom: .5rem;
+}
+.exp-card-comp {
+    padding: .5rem 0;
+}
+.exp-card-desc ul {
+    margin: 1em 0;
+}
+.exp-card-desc ul li {
+    margin: 5px 0;
+}
+
+@media screen and (max-width: 768px) {
+    .exp-card {
+        margin: 25px 0;
+    }
+    .exp-card-name {
+        display: block;
+    }
+    .exp-card-name small {
+        margin-bottom: .5rem;
+    }
+    .exp-card-name h3 {
+        text-align: left;
+    }
 }

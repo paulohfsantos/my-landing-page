@@ -19,6 +19,9 @@
 .home .padding-2 {
     padding-bottom: 2rem;
 }
+.m-auto {
+    margin: 0 auto;
+}
 .justify-center {
     justify-content: center;
 }
@@ -44,6 +47,18 @@
     .home .link-proj:hover{
         background-color: #34b0cf;
     }
+.exp-card-name h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.exp-card-name h2 {
+    padding-bottom: .5rem;
+}
+.exp-card-comp h3 {
+    text-align: left;
+    font-size: 1rem;
+    font-weight: 600;
+}
 
 @media screen and (max-width: 768px) {
     .home h2 {
