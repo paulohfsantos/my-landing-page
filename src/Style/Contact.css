@@ -1,6 +1,24 @@
 .contact {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     height: 90vh;
+    background-color: #1c1c1c;
+    color: #ddd;
+}
+.contact h1 {
+    text-align: center;
+    padding: 4rem 0;
+}
+.contact h1::after {
+    content: '';
+    background: #15cdfc;
+    width: 2em;
+    height: 3px;
+    position: absolute;
+    left: 50%;
+    transform: translateY(45px) translate(-50%);
+    transition: width 0.3s;
+}
+.contact p {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
 }

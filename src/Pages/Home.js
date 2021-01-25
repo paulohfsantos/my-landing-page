@@ -126,7 +126,7 @@ const Home = () => {
                                     }
                                 </ul>
                             </Col6>
-                            <Col12 className="flex justify-center">
+                            <Col12 className="flex justify-center padding-2">
                                 <Link className="link-proj" to="/Experience">See All</Link>
                             </Col12>
                         </Row>

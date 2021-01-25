@@ -1,11 +1,20 @@
 import React from 'react'
+import { Col12, Container, Row } from '../Components/ColElements'
 import '../Style/Contact.css'
-//import styled from 'styled-components'
 
 const Contact = () => {
     return (
         <div className="contact">
-            <h1>Contact</h1>
+            <Container>
+                <Row>
+                    <Col12>
+                        <h1>Contact</h1>
+                    </Col12>
+                    <Col12>
+                        <p>Coming Soon</p>
+                    </Col12>
+                </Row>
+            </Container>
         </div>
     )
 }
