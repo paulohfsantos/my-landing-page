@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 import {Nav, Bars, NavLink, NavMenu, NavMenuMobile} from './NavbarElements'
+import { GoHome } from "react-icons/go"
 
 const Navbar = () => {
 
@@ -12,7 +13,7 @@ const Navbar = () => {
             <div>
                 <Nav className={menuHamb ? "nav-menu active" : "nav-menu"}>
                     <NavLink to="/">
-                        <h1>Logo</h1>
+                        <GoHome />
                     </NavLink>
                     <Bars onClick={showMenu} />
                     <>

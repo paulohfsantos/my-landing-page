@@ -23,14 +23,14 @@ let data = [
     },
     {
         image: <ImgComp src={img3} />,
-        title: 'Projeto 1 - Contact List',
-        subtitle: 'A Simple contact list with Vue.js',
-    },
-    {
-        image: <ImgComp src={img1} />,
-        title: 'Projeto 1 - Commpre',
-        subtitle: 'Simple website ecommerce template using HTML5, CSS3 and Javascript',
+        title: 'Projeto 3 - Contact List',
+        subtitle: 'A Simple contact list made with Vue.js',
     }
+    // {
+    //     image: <ImgComp src={img1} />,
+    //     title: 'Projeto 1 - Commpre',
+    //     subtitle: 'Simple website ecommerce template using HTML5, CSS3 and Javascript',
+    // }
 ]
 
 let expData = [

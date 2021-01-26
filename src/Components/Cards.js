@@ -6,15 +6,17 @@ import '../Style/Cards.css'
         <li>
             <div className="card">
                 <div className="card-container">
-                    <div>
-                        <div className="card-title">
+                    <div className="info-group-card">
+                        <div className="card-image">
                             {props.image}
                         </div>
-                        <div className="card-title">
-                            {props.title}
-                        </div>
-                        <div className="card-subtitle">
-                            <p>{props.subtitle}</p>
+                        <div>
+                            <div className="card-title">
+                                {props.title}
+                            </div>
+                            <div className="card-subtitle">
+                                <p>{props.subtitle}</p>
+                            </div>
                         </div>
                     </div>
                 </div>

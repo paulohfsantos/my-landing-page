@@ -1,9 +1,10 @@
 import React from 'react'
 import '../Style/Projects.css'
-import {Col12, Col4, Row, Container} from '../Components/ColElements'
+import {Col12, Row, Container} from '../Components/ColElements'
 import Cards from '../Components/Cards'
 // import {Link} from 'react-router-dom'
 import ImgComp from '../Components/ImgComp'
+import {FaClock} from 'react-icons/fa'
 import img1 from '../Pics/Commpre.png'
 import img2 from '../Pics/Site.png'
 import img3 from '../Pics/Contact-List.png'
@@ -21,44 +22,44 @@ let data = [
     },
     {
         image: <ImgComp src={img3} />,
-        title: 'Projeto 1 - Contact List',
-        subtitle: 'A Simple contact list with Vue.js',
-    },
-    {
-        image: <ImgComp src={img1} />,
-        title: 'Card Title 1',
-        subtitle: 'This is a Subtitle',
-    },
-    {
-        image: <ImgComp src={img2} />,
-        title: 'Card Title 2',
-        subtitle: 'This is a Subtitle',
-    },
-    {
-        image: <ImgComp src={img3} />,
-        title: 'Card Title 3',
-        subtitle: 'This is a Subtitle',
-    },
-    {
-        image: <ImgComp src={img3} />,
-        title: 'Card Title 3',
-        subtitle: 'This is a Subtitle',
-    },
-    {
-        image: <ImgComp src={img1} />,
-        title: 'Card Title 1',
-        subtitle: 'This is a Subtitle',
-    },
-    {
-        image: <ImgComp src={img2} />,
-        title: 'Card Title 2',
-        subtitle: 'This is a Subtitle',
-    },
-    {
-        image: <ImgComp src={img3} />,
-        title: 'Card Title 3',
-        subtitle: 'This is a Subtitle',
+        title: 'Projeto 3 - Contact List',
+        subtitle: 'A Simple contact list made with Vue.js',
     }
+    // {
+    //     image: <ImgComp src={img1} />,
+    //     title: 'Card Title 1',
+    //     subtitle: 'This is a Subtitle',
+    // }
+    // {
+    //     image: <ImgComp src={img2} />,
+    //     title: 'Card Title 2',
+    //     subtitle: 'This is a Subtitle',
+    // },
+    // {
+    //     image: <ImgComp src={img3} />,
+    //     title: 'Card Title 3',
+    //     subtitle: 'This is a Subtitle',
+    // },
+    // {
+    //     image: <ImgComp src={img3} />,
+    //     title: 'Card Title 3',
+    //     subtitle: 'This is a Subtitle',
+    // },
+    // {
+    //     image: <ImgComp src={img1} />,
+    //     title: 'Card Title 1',
+    //     subtitle: 'This is a Subtitle',
+    // },
+    // {
+    //     image: <ImgComp src={img2} />,
+    //     title: 'Card Title 2',
+    //     subtitle: 'This is a Subtitle',
+    // },
+    // {
+    //     image: <ImgComp src={img3} />,
+    //     title: 'Card Title 3',
+    //     subtitle: 'This is a Subtitle',
+    // }
 ]
 
 const Projects = () => {
@@ -71,7 +72,7 @@ const Projects = () => {
             </Row>
             <Container className="container">
                 <Row>
-                    <Col4 className="centered padding-2">
+                    <Col12 className="centered padding-2">
                         <ul className="card-list">
                             {
                                 data.map((data, index)=>{
@@ -85,7 +86,21 @@ const Projects = () => {
                                 })
                             }
                         </ul>
-                    </Col4>
+                        <div style={{marginTop: '2em'}}>
+                            <p style={{textAlign: 'center'}}>
+                                <FaClock />
+                            </p>
+                            <p style={{textAlign: 'center'}}>More projects soon...</p>
+                        </div>
+                    </Col12>
+                    {/* <Col12>
+                        <div>
+                            <p style={{textAlign: 'center'}}>
+                                <FaClock />
+                            </p>
+                            <p style={{textAlign: 'center'}}>Soon more projects...</p>
+                        </div>
+                    </Col12> */}
                 </Row>
             </Container>
         </div>

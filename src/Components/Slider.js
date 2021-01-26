@@ -26,7 +26,7 @@ const Slider = () => {
 
     return (
         <div className="slider">
-            <span>Confira nossos serviços</span>
+            <span>Check our Development Services</span>
             {
                 sliderArr.map((item, index) => {
                     return (
