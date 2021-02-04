@@ -9,6 +9,8 @@ export const Nav = styled.nav`
     justify-content: space-between;
     padding: .5rem calc((100vw - 1000px) / 2);
     z-index: 10;
+    position: fixed;
+    width: 100%;
     
     @media screen and (max-width: 768px){
         display: flex;
